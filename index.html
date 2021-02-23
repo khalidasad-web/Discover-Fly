@@ -41,8 +41,8 @@
                 </div>
                 <div class="inputs">
                     <div class="input-group">
-                        <label" for="">Departure</label>
-                            <input class="inp-style" type="date" name="">
+                        <label for="">Departure</label>
+                        <input class="inp-style" type="date" name="">
                     </div>
                     <div class="input-group">
                         <label for="">Return</label>
@@ -52,13 +52,13 @@
                 <div class="input-group f-class">
                     <div>
                         <label for="">First Class ($150)</label>
-                        <input class="inp-style inp-width" type="number" name="">
+                        <input class="inp-style inp-width" id="first-class-qty" type="number" name="">
                     </div>
                     <div>
-                        <button class="plus-minus-btn" id="first-plus-btn">
+                        <button class="plus-minus-btn" id="first-class-plus-btn" onclick="firstClassIncrease()">
                             <p>+</p>
                         </button>
-                        <button class="plus-minus-btn" id="first-minus-btn">
+                        <button class="plus-minus-btn" id="first-class-minus-btn" onclick="firstClassDecrease()">
                             <p>-</p>
                         </button>
                         <!-- <p> <span>+</span> <span>-</span> </p> -->
@@ -68,13 +68,13 @@
                 <div class="input-group f-class">
                     <div>
                         <label for="">Economy ($100)</label>
-                        <input class="inp-style inp-width" type="number" name="">
+                        <input class="inp-style inp-width" id="economy-class-qty" type="number" name="">
                     </div>
                     <div>
-                        <button class="plus-minus-btn" id="economy-plus-btn">
+                        <button class="plus-minus-btn" id="economy-class-plus-btn" onclick="economyClassIncrease()">
                             <p>+</p>
                         </button>
-                        <button class="plus-minus-btn" id="economy-minus-btn">
+                        <button class="plus-minus-btn" id="economy-class-minus-btn" onclick="economyClassDecrease()">
                             <p>-</p>
                         </button>
                         <!-- <p> <span>+</span> <span>-</span> </p> -->
@@ -108,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <button class="btn-style" id="booking-btn">Book Now</button>
+                <button class="btn-style" id="booking-btn" onclick="confirmBooking()">Book Now</button>
             </div>
 
             <div class="booking-content">
@@ -117,8 +117,9 @@
                     veniam libero autem quasi maxime ullam vero nama imi dolor, architecto ab facilis eaque deserunt
                     nobise voluptatibus quam</p>
             </div>
-            </section>
 
+            </section>
+            <script src="script.js"></script>
             <!--Thank You-->
     </body>
 
